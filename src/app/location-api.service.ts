@@ -12,7 +12,7 @@ export class LocationApiService {
   constructor(private http: HttpClient) { }
   getLocationData(cityName:string){
     return this.http.get(
-      'http://api.openweathermap.org/geo/1.0/direct?q='+ cityName +'&appid='+ API_KEY
+      'https://api.openweathermap.org/geo/1.0/direct?q='+ cityName +'&appid='+ API_KEY
     );
   }
 }
