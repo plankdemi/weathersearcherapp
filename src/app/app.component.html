@@ -1,0 +1,11 @@
+<div class="text-center">
+  <h1 class="text-center my-4">Temperature for your chosen city APP</h1>
+
+  <input type="text" class="bg-slate-500 block text-center mx-auto rounded-full text-slate-100 py-3" #input>
+
+  <h2 *ngIf="showTemp">Current temperature in {{city}} is {{tempC}} Celsius, {{tempF}} Fahrenheit or {{tempK}} Kelvin
+  </h2>
+
+
+  <button (click)="fetchData(input.value)" class="bg-slate-600 py-1 px-3 text-slate-100 rounded-full m-1">Show
+    Weather</button>
